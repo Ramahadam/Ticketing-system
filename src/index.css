@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply grid grid-cols-6 max-w-7xl mx-auto;
+}
+
+.actions {
+  @apply flex gap-8 justify-end;
+}
+
+.btn--primary {
+  @apply bg-sky-500 px-3 py-2  rounded-md text-white font-normal text-sm cursor-pointer;
+}
+.btn--seconday {
+  @apply border-2 border-dashed py-2 border-sky-500 px-3 rounded-md text-sky-500 text-sm;
+}
+
+aside {
+  @apply flex flex-col gap-8 text-slate-600  bg-slate-100 mr-6  h-screen border-r border-r-slate-100;
+}
+
+form {
+  @apply p-4 rounded-md max-w-md mx-auto border border-slate-200 bg-slate-100;
+}
+
+input,
+select {
+  @apply border-slate-200 border px-3 py-2 rounded-md  focus:outline-none focus:border-cyan-200;
+}
